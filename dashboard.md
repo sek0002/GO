@@ -9,6 +9,18 @@
     --accent-2: rgba(255, 255, 255, 0.72);
   }
 
+  html,
+  body {
+    min-height: 100%;
+    margin: 0;
+    background: var(--surface);
+  }
+
+  body {
+    padding: 28px;
+    box-sizing: border-box;
+  }
+
   .dashboard-shell {
     max-width: 980px;
     margin: 0 auto;
@@ -138,6 +150,10 @@
   }
 
   @media (max-width: 560px) {
+    body {
+      padding: 18px;
+    }
+
     .dashboard-shell {
       padding: 18px;
     }
