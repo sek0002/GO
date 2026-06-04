@@ -1,0 +1,10 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Upward chart">
+  <rect width="128" height="128" fill="none"/>
+  <path d="M24 102H104" stroke="#111111" stroke-width="9" stroke-linecap="round"/>
+  <path d="M28 94V72" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
+  <path d="M48 94V58" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
+  <path d="M68 94V66" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
+  <path d="M88 94V42" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
+  <path d="M31 58L50 39L68 51L96 23" stroke="#111111" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M76 22H97V43" stroke="#111111" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

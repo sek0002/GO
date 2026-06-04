@@ -1,0 +1,5 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dollar sign">
+  <rect width="128" height="128" fill="none"/>
+  <path d="M64 18V110" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
+  <path d="M84 38C78 31 69 28 58 30C47 32 40 38 40 47C40 58 49 62 64 66C79 70 88 75 88 87C88 99 78 106 63 106C51 106 41 102 34 94" stroke="#111111" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
