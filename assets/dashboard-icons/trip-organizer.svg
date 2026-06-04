@@ -1,11 +1,14 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top-down Zodiac boat">
   <rect width="128" height="128" fill="none"/>
-  <path d="M26 62C26 41 42 25 64 25C86 25 102 41 102 62C102 84 86 101 64 101C42 101 26 84 26 62Z" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M43 44C51 36 77 36 85 44L76 82H52L43 44Z" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/>
-  <path d="M51 52H77" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
-  <path d="M54 67H74" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
-  <path d="M24 62H14" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
-  <path d="M114 62H104" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
-  <path d="M47 96L38 111" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
-  <path d="M81 96L90 111" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M64 14C80 22 96 38 101 58C106 78 98 97 86 106H78C88 95 93 78 89 60C86 45 76 33 64 27C52 33 42 45 39 60C35 78 40 95 50 106H42C30 97 22 78 27 58C32 38 48 22 64 14Z" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M42 103H86" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M48 47C53 39 58 33 64 29C70 33 75 39 80 47L76 90H52L48 47Z" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M51 47H79" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M50 66H79" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M52 84H76" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M58 57H70V74H58V57Z" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M64 104V116" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M55 116H73" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M30 61H21" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M107 61H98" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
 </svg>
