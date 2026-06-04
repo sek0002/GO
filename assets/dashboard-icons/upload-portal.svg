@@ -1,6 +1,6 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cloud upload">
   <rect width="128" height="128" fill="none"/>
-  <path d="M38 92H34C22 92 14 84 14 73C14 62 23 54 34 54C38 39 51 30 66 30C83 30 97 42 99 59C109 61 116 69 116 80C116 90 108 92 99 92H92" stroke="#111111" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M64 94V50" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
-  <path d="M46 68L64 50L82 68" stroke="#111111" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 92H34C22 92 14 84 14 73C14 62 23 54 34 54C38 39 51 30 66 30C83 30 97 42 99 59C109 61 116 69 116 80C116 90 108 92 99 92H92" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M64 94V50" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M46 68L64 50L82 68" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

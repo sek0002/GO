@@ -1,12 +1,12 @@
 <style>
   :root {
-    --ink: #172033;
-    --muted: #667085;
-    --line: #d7dde8;
-    --panel: #ffffff;
-    --surface: #f5f7fb;
-    --accent: #1d7d8f;
-    --accent-2: #d79922;
+    --ink: #ffffff;
+    --muted: rgba(255, 255, 255, 0.68);
+    --line: rgba(255, 255, 255, 0.14);
+    --panel: rgba(255, 255, 255, 0.08);
+    --surface: #00091d;
+    --accent: #ffffff;
+    --accent-2: rgba(255, 255, 255, 0.72);
   }
 
   .dashboard-shell {
@@ -15,9 +15,7 @@
     padding: 28px;
     color: var(--ink);
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background:
-      linear-gradient(135deg, rgba(29, 125, 143, 0.08), rgba(215, 153, 34, 0.08)),
-      var(--surface);
+    background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 8px;
   }
@@ -50,9 +48,9 @@
     color: var(--ink);
     text-decoration: none;
     background: var(--panel);
-    border: 1px solid rgba(23, 32, 51, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 8px;
-    box-shadow: 0 8px 18px rgba(23, 32, 51, 0.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
     transform: translateY(0) scale(1);
     transition:
       transform 180ms ease,
@@ -63,12 +61,12 @@
 
   .dashboard-tile:hover {
     transform: translateY(-6px) scale(1.025);
-    border-color: rgba(29, 125, 143, 0.48);
-    box-shadow: 0 18px 34px rgba(23, 32, 51, 0.14);
+    border-color: rgba(255, 255, 255, 0.38);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
   }
 
   .dashboard-tile:focus-visible {
-    outline: 3px solid rgba(29, 125, 143, 0.35);
+    outline: 3px solid rgba(255, 255, 255, 0.35);
     outline-offset: 3px;
   }
 
@@ -85,13 +83,13 @@
     overflow: hidden;
     border-radius: 8px;
     background:
-      linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.48)),
-      rgba(255, 255, 255, 0.62);
-    border: 1px solid rgba(255, 255, 255, 0.72);
+      linear-gradient(145deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.04)),
+      rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.9),
-      inset 0 0 0 1px rgba(23, 32, 51, 0.06),
-      0 10px 22px rgba(23, 32, 51, 0.12);
+      inset 0 1px 0 rgba(255, 255, 255, 0.24),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+      0 10px 22px rgba(0, 0, 0, 0.24);
     backdrop-filter: blur(14px) saturate(1.15);
   }
 
@@ -129,13 +127,13 @@
 
   @keyframes tile-click {
     0% {
-      box-shadow: 0 18px 34px rgba(23, 32, 51, 0.14);
+      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
     }
     60% {
-      box-shadow: 0 0 0 7px rgba(29, 125, 143, 0.13);
+      box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.12);
     }
     100% {
-      box-shadow: 0 8px 18px rgba(23, 32, 51, 0.08);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
     }
   }
 

@@ -1,11 +1,11 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top-down Zodiac boat">
   <rect width="128" height="128" fill="none"/>
-  <path d="M26 62C26 41 42 25 64 25C86 25 102 41 102 62C102 84 86 101 64 101C42 101 26 84 26 62Z" stroke="#111111" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M43 44C51 36 77 36 85 44L76 82H52L43 44Z" fill="#FFFFFF" stroke="#111111" stroke-width="8" stroke-linejoin="round"/>
-  <path d="M51 52H77" stroke="#111111" stroke-width="7" stroke-linecap="round"/>
-  <path d="M54 67H74" stroke="#111111" stroke-width="7" stroke-linecap="round"/>
-  <path d="M24 62H14" stroke="#111111" stroke-width="9" stroke-linecap="round"/>
-  <path d="M114 62H104" stroke="#111111" stroke-width="9" stroke-linecap="round"/>
-  <path d="M47 96L38 111" stroke="#111111" stroke-width="8" stroke-linecap="round"/>
-  <path d="M81 96L90 111" stroke="#111111" stroke-width="8" stroke-linecap="round"/>
+  <path d="M26 62C26 41 42 25 64 25C86 25 102 41 102 62C102 84 86 101 64 101C42 101 26 84 26 62Z" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M43 44C51 36 77 36 85 44L76 82H52L43 44Z" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M51 52H77" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M54 67H74" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+  <path d="M24 62H14" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  <path d="M114 62H104" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  <path d="M47 96L38 111" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M81 96L90 111" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
 </svg>
