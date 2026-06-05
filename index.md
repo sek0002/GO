@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
   :root {
     --ink: #172033;
@@ -139,17 +140,16 @@
     }
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px), (hover: none) and (pointer: coarse) {
     .dashboard-shell {
       padding: 18px;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
+      overflow-x: hidden;
     }
 
     .dashboard-grid {
-      grid-auto-flow: column;
-      grid-auto-columns: minmax(238px, 78vw);
-      grid-template-columns: none;
+      width: 100%;
+      grid-auto-flow: row;
+      grid-template-columns: 1fr;
     }
 
     .dashboard-heading {
@@ -158,7 +158,6 @@
 
     .dashboard-tile {
       min-height: 196px;
-      scroll-snap-align: start;
     }
 
     .dashboard-icon-wrap {
