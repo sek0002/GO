@@ -257,7 +257,7 @@
     }
   }
 
-  @media (max-width: 768px), (hover: none) and (pointer: coarse) {
+  @media (max-width: 768px) {
     body {
       padding: 0;
     }
