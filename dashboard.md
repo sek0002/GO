@@ -173,8 +173,8 @@
 </style>
 
 <section class="dashboard-shell" aria-labelledby="dashboard-title">
-  <h1 id="dashboard-title" class="dashboard-heading">Workspace Dashboard</h1>
-  <p class="dashboard-subtitle">Quick access to core tools and reports.</p>
+  <h1 id="dashboard-title" class="dashboard-heading">MUUC tools</h1>
+  <p class="dashboard-subtitle">Quick access to tools and reports.</p>
 
   <div class="dashboard-grid">
     <a class="dashboard-tile" href="https://muuc.sek-lab.com" aria-label="Open Finance">
@@ -182,8 +182,7 @@
         <img class="dashboard-icon" src="./assets/dashboard-icons/finance.svg" alt="" />
       </span>
       <h2 class="dashboard-title">Finance</h2>
-      <p class="dashboard-copy">Review balances, forecasts, approvals, and financial snapshots.</p>
-      <span class="dashboard-cta">Open</span>
+      <p class="dashboard-copy">Review club finances, updated monthly.</p>
     </a>
 
     <a class="dashboard-tile" href="https://muuc-upload.sek-lab.com/" aria-label="Open Upload Portal">
@@ -191,26 +190,23 @@
         <img class="dashboard-icon" src="./assets/dashboard-icons/upload-portal.svg" alt="" />
       </span>
       <h2 class="dashboard-title">Upload Portal</h2>
-      <p class="dashboard-copy">Submit files, receipts, statements, and shared records.</p>
-      <span class="dashboard-cta">Open</span>
+      <p class="dashboard-copy">Upload and track your receipts, invoices, refund requests.</p>
     </a>
 
-    <a class="dashboard-tile" href="https://muuc-trip.sek-lab.com/" aria-label="Open Trip Organizer">
+    <a class="dashboard-tile" href="https://trip.muuc.org.au" aria-label="Open Trip Organiser">
       <span class="dashboard-icon-wrap">
         <img class="dashboard-icon" src="./assets/dashboard-icons/trip-organizer.svg" alt="" />
       </span>
-      <h2 class="dashboard-title">Trip Organizer</h2>
-      <p class="dashboard-copy">Plan routes, itineraries, lodging, documents, and dates.</p>
-      <span class="dashboard-cta">Open</span>
+      <h2 class="dashboard-title">Trip Organiser</h2>
+      <p class="dashboard-copy">Track Memberships, Gear and Boat payments.</p>
     </a>
 
-    <a class="dashboard-tile" href="https://muuc.sek-lab.com/treasury-report" aria-label="Open Treasury Report 2025">
+    <a class="dashboard-tile" href="https://muuc.sek-lab.com/treasury-report" aria-label="Open Treasury Report">
       <span class="dashboard-icon-wrap">
         <img class="dashboard-icon" src="./assets/dashboard-icons/treasury-report-2025.svg" alt="" />
       </span>
-      <h2 class="dashboard-title">Treasury Report 2025</h2>
-      <p class="dashboard-copy">Access annual reporting, treasury figures, and supporting documents.</p>
-      <span class="dashboard-cta">Open</span>
+      <h2 class="dashboard-title">Treasury Report</h2>
+      <p class="dashboard-copy">Access the 2025 Treasury Report.</p>
     </a>
   </div>
 </section>
