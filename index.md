@@ -142,6 +142,14 @@
   @media (max-width: 560px) {
     .dashboard-shell {
       padding: 18px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+
+    .dashboard-grid {
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(238px, 78vw);
+      grid-template-columns: none;
     }
 
     .dashboard-heading {
@@ -150,6 +158,7 @@
 
     .dashboard-tile {
       min-height: 196px;
+      scroll-snap-align: start;
     }
 
     .dashboard-icon-wrap {
