@@ -77,6 +77,23 @@
     box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
   }
 
+  .dashboard-tile.upload-theme {
+    background: #12372e;
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+
+  .dashboard-tile.upload-theme:hover {
+    border-color: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+  }
+
+  .dashboard-tile.upload-theme .dashboard-icon-wrap {
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.05)),
+      rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.24);
+  }
+
   .dashboard-tile:focus-visible {
     outline: 3px solid rgba(255, 255, 255, 0.35);
     outline-offset: 3px;
@@ -185,7 +202,7 @@
       <p class="dashboard-copy">Review club finances, updated monthly.</p>
     </a>
 
-    <a class="dashboard-tile" href="https://muuc-upload.sek-lab.com/" aria-label="Open Upload Portal">
+    <a class="dashboard-tile upload-theme" href="https://muuc-upload.sek-lab.com/" aria-label="Open Upload Portal">
       <span class="dashboard-icon-wrap">
         <img class="dashboard-icon" src="./assets/dashboard-icons/upload-portal.svg" alt="" />
       </span>
