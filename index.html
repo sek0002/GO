@@ -17,132 +17,169 @@
   }
 
   body {
-    padding: 28px;
+    padding: 0;
     box-sizing: border-box;
   }
 
   .dashboard-shell {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 28px;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     color: var(--ink);
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 8px;
+    overflow: hidden;
   }
 
   .dashboard-heading {
-    margin: 0 0 6px;
+    position: absolute;
+    z-index: 3;
+    top: 28px;
+    left: 28px;
+    margin: 0;
     font-size: 30px;
     line-height: 1.15;
     letter-spacing: 0;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
   }
 
   .dashboard-subtitle {
-    margin: 0 0 24px;
-    color: var(--muted);
+    position: absolute;
+    z-index: 3;
+    top: 68px;
+    left: 28px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
     font-size: 15px;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
   }
 
   .dashboard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 16px;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
   }
 
   .dashboard-tile {
+    position: relative;
+    isolation: isolate;
+    box-sizing: border-box;
     display: grid;
-    gap: 12px;
-    align-content: start;
-    min-height: 220px;
-    padding: 18px;
+    overflow: hidden;
+    gap: 14px;
+    align-content: center;
+    min-height: 100vh;
+    padding: 128px 28px 34px;
     color: var(--ink);
     text-decoration: none;
-    background: var(--panel);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 8px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
     transform: translateY(0) scale(1);
     transition:
       transform 180ms ease,
-      box-shadow 180ms ease,
-      border-color 180ms ease,
-      background 180ms ease;
+      filter 180ms ease;
+  }
+
+  .dashboard-tile::before {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    content: "";
+    background-image: var(--panel-image);
+    background-position: var(--panel-position, center);
+    background-repeat: no-repeat;
+    background-size: var(--panel-size, cover);
+    transform: scale(1.01);
+    transition: transform 240ms ease;
+  }
+
+  .dashboard-tile::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.14) 36%, rgba(0, 0, 0, 0.42)),
+      var(--panel-tint);
   }
 
   .dashboard-tile:hover {
-    transform: translateY(-6px) scale(1.025);
-    border-color: rgba(255, 255, 255, 0.38);
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
+    filter: saturate(1.08) contrast(1.04);
+    transform: translateY(0) scale(1);
+  }
+
+  .dashboard-tile:hover::before {
+    transform: scale(1.06);
   }
 
   .dashboard-tile.finance-theme {
-    background: #7567f2;
-    border-color: rgba(255, 255, 255, 0.2);
+    --panel-image: url("./assets/backgrounds/finance-underwater.webp");
+    --panel-tint: linear-gradient(180deg, rgba(117, 103, 242, 0.1), rgba(45, 24, 105, 0.28));
   }
 
   .dashboard-tile.finance-theme:hover {
-    border-color: rgba(255, 255, 255, 0.46);
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+    box-shadow: none;
   }
 
   .dashboard-tile.finance-theme .dashboard-icon-wrap {
     background:
-      linear-gradient(145deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.06)),
-      rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.26);
+      linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.025)),
+      rgba(117, 103, 242, 0.055);
+    border-color: rgba(255, 255, 255, 0.16);
   }
 
   .dashboard-tile.upload-theme {
-    background: #12372e;
-    border-color: rgba(255, 255, 255, 0.18);
+    --panel-image: url("./assets/backgrounds/upload-underwater.jpg");
+    --panel-tint: linear-gradient(180deg, rgba(18, 55, 46, 0.08), rgba(10, 40, 34, 0.28));
   }
 
   .dashboard-tile.upload-theme:hover {
-    border-color: rgba(255, 255, 255, 0.42);
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+    box-shadow: none;
   }
 
   .dashboard-tile.upload-theme .dashboard-icon-wrap {
     background:
-      linear-gradient(145deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.05)),
-      rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.24);
+      linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.025)),
+      rgba(18, 55, 46, 0.055);
+    border-color: rgba(255, 255, 255, 0.16);
   }
 
   .dashboard-tile.trip-theme {
-    background: #38b6c8;
-    border-color: rgba(255, 255, 255, 0.2);
+    --panel-image: url("./assets/backgrounds/trip-aerial-ray.webp");
+    --panel-position: 42% center;
+    --panel-size: cover;
+    --panel-tint: linear-gradient(180deg, rgba(56, 182, 200, 0.08), rgba(16, 98, 115, 0.28));
   }
 
   .dashboard-tile.trip-theme:hover {
-    border-color: rgba(255, 255, 255, 0.46);
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+    box-shadow: none;
   }
 
   .dashboard-tile.trip-theme .dashboard-icon-wrap {
     background:
-      linear-gradient(145deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.06)),
-      rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.26);
+      linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.025)),
+      rgba(56, 182, 200, 0.055);
+    border-color: rgba(255, 255, 255, 0.16);
   }
 
   .dashboard-tile.treasury-theme {
-    background: #123f50;
-    border-color: rgba(255, 255, 255, 0.2);
+    --panel-image: url("./assets/backgrounds/treasury-underwater.jpg");
+    --panel-tint: linear-gradient(180deg, rgba(18, 63, 80, 0.1), rgba(5, 38, 54, 0.28));
   }
 
   .dashboard-tile.treasury-theme:hover {
-    border-color: rgba(255, 255, 255, 0.46);
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+    box-shadow: none;
   }
 
   .dashboard-tile.treasury-theme .dashboard-icon-wrap {
     background:
-      linear-gradient(145deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05)),
-      rgba(255, 255, 255, 0.11);
-    border-color: rgba(255, 255, 255, 0.25);
+      linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.025)),
+      rgba(18, 63, 80, 0.055);
+    border-color: rgba(255, 255, 255, 0.16);
   }
 
   .dashboard-tile:focus-visible {
@@ -151,7 +188,7 @@
   }
 
   .dashboard-tile:active {
-    transform: translateY(-1px) scale(0.97);
+    transform: scale(0.995);
     animation: tile-click 180ms ease;
   }
 
@@ -163,13 +200,13 @@
     overflow: hidden;
     border-radius: 8px;
     background:
-      linear-gradient(145deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.04)),
-      rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+      linear-gradient(145deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.025)),
+      rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.16);
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.24),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-      0 10px 22px rgba(0, 0, 0, 0.24);
+      inset 0 1px 0 rgba(255, 255, 255, 0.18),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.035),
+      0 10px 22px rgba(0, 0, 0, 0.28);
     backdrop-filter: blur(14px) saturate(1.15);
   }
 
@@ -189,13 +226,15 @@
     font-size: 18px;
     line-height: 1.25;
     letter-spacing: 0;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
   }
 
   .dashboard-copy {
     margin: 0;
-    color: var(--muted);
+    color: rgba(255, 255, 255, 0.78);
     font-size: 14px;
     line-height: 1.45;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
   }
 
   .dashboard-cta {
@@ -219,19 +258,28 @@
 
   @media (max-width: 560px) {
     body {
-      padding: 18px;
+      padding: 0;
     }
 
-    .dashboard-shell {
-      padding: 18px;
+    .dashboard-grid {
+      grid-template-columns: 1fr;
     }
 
     .dashboard-heading {
+      top: 20px;
+      left: 20px;
       font-size: 24px;
     }
 
+    .dashboard-subtitle {
+      top: 52px;
+      left: 20px;
+      right: 20px;
+    }
+
     .dashboard-tile {
-      min-height: 196px;
+      min-height: 54vh;
+      padding: 112px 20px 26px;
     }
 
     .dashboard-icon-wrap {
