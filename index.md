@@ -140,7 +140,7 @@
     }
   }
 
-  @media (max-width: 768px), (hover: none) and (pointer: coarse) {
+  @media (max-width: 768px) {
     .dashboard-shell {
       padding: 18px;
       overflow-x: hidden;
