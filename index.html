@@ -288,12 +288,13 @@
     }
 
     .dashboard-tile {
-      min-height: 62vh;
-      padding: 112px 20px 26px;
+      min-height: 31vh;
+      padding: 86px 20px 18px;
+      gap: 8px;
     }
 
     .dashboard-icon-wrap {
-      width: 92px;
+      width: 64px;
     }
   }
 </style>
