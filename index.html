@@ -293,6 +293,10 @@
       gap: 8px;
     }
 
+    .dashboard-tile.trip-theme {
+      --panel-position: 42% 28%;
+    }
+
     .dashboard-icon-wrap {
       width: 64px;
     }
