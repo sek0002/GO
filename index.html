@@ -262,14 +262,14 @@
     }
 
     .dashboard-shell {
-      overflow-x: auto;
-      overflow-y: hidden;
-      scroll-snap-type: x mandatory;
+      min-height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     .dashboard-grid {
-      width: max-content;
-      grid-template-columns: repeat(4, minmax(78vw, 78vw));
+      min-height: 100%;
+      grid-template-columns: 1fr;
     }
 
     .dashboard-heading {
@@ -285,9 +285,8 @@
     }
 
     .dashboard-tile {
-      min-height: 100vh;
+      min-height: 62vh;
       padding: 112px 20px 26px;
-      scroll-snap-align: start;
     }
 
     .dashboard-icon-wrap {
