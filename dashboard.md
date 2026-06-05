@@ -77,6 +77,23 @@
     box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
   }
 
+  .dashboard-tile.finance-theme {
+    background: #7567f2;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .dashboard-tile.finance-theme:hover {
+    border-color: rgba(255, 255, 255, 0.46);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+  }
+
+  .dashboard-tile.finance-theme .dashboard-icon-wrap {
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.06)),
+      rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.26);
+  }
+
   .dashboard-tile.upload-theme {
     background: #12372e;
     border-color: rgba(255, 255, 255, 0.18);
@@ -194,7 +211,7 @@
   <p class="dashboard-subtitle">Quick access to tools and reports.</p>
 
   <div class="dashboard-grid">
-    <a class="dashboard-tile" href="https://muuc.sek-lab.com" aria-label="Open Finance">
+    <a class="dashboard-tile finance-theme" href="https://muuc.sek-lab.com" aria-label="Open Finance">
       <span class="dashboard-icon-wrap">
         <img class="dashboard-icon" src="./assets/dashboard-icons/finance.svg" alt="" />
       </span>
