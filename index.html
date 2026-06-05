@@ -111,6 +111,23 @@
     border-color: rgba(255, 255, 255, 0.24);
   }
 
+  .dashboard-tile.trip-theme {
+    background: #38b6c8;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .dashboard-tile.trip-theme:hover {
+    border-color: rgba(255, 255, 255, 0.46);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+  }
+
+  .dashboard-tile.trip-theme .dashboard-icon-wrap {
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.06)),
+      rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.26);
+  }
+
   .dashboard-tile:focus-visible {
     outline: 3px solid rgba(255, 255, 255, 0.35);
     outline-offset: 3px;
@@ -227,7 +244,7 @@
       <p class="dashboard-copy">Upload and track your receipts, invoices, refund requests.</p>
     </a>
 
-    <a class="dashboard-tile" href="https://trip.muuc.org.au" aria-label="Open Trip Organiser">
+    <a class="dashboard-tile trip-theme" href="https://trip.muuc.org.au" aria-label="Open Trip Organiser">
       <span class="dashboard-icon-wrap">
         <img class="dashboard-icon" src="./assets/dashboard-icons/trip-organizer.svg" alt="" />
       </span>
