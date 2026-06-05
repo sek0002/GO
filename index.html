@@ -128,6 +128,23 @@
     border-color: rgba(255, 255, 255, 0.26);
   }
 
+  .dashboard-tile.treasury-theme {
+    background: #123f50;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .dashboard-tile.treasury-theme:hover {
+    border-color: rgba(255, 255, 255, 0.46);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+  }
+
+  .dashboard-tile.treasury-theme .dashboard-icon-wrap {
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05)),
+      rgba(255, 255, 255, 0.11);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+
   .dashboard-tile:focus-visible {
     outline: 3px solid rgba(255, 255, 255, 0.35);
     outline-offset: 3px;
@@ -252,7 +269,7 @@
       <p class="dashboard-copy">Track Memberships, Gear and Boat payments.</p>
     </a>
 
-    <a class="dashboard-tile" href="https://muuc.sek-lab.com/treasury-report" aria-label="Open Treasury Report">
+    <a class="dashboard-tile treasury-theme" href="https://muuc.sek-lab.com/treasury-report" aria-label="Open Treasury Report">
       <span class="dashboard-icon-wrap">
         <img class="dashboard-icon" src="./assets/dashboard-icons/treasury-report-2025.svg" alt="" />
       </span>
