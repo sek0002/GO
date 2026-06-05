@@ -261,8 +261,15 @@
       padding: 0;
     }
 
+    .dashboard-shell {
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+    }
+
     .dashboard-grid {
-      grid-template-columns: 1fr;
+      width: max-content;
+      grid-template-columns: repeat(4, minmax(78vw, 78vw));
     }
 
     .dashboard-heading {
@@ -278,8 +285,9 @@
     }
 
     .dashboard-tile {
-      min-height: 54vh;
+      min-height: 100vh;
       padding: 112px 20px 26px;
+      scroll-snap-align: start;
     }
 
     .dashboard-icon-wrap {
